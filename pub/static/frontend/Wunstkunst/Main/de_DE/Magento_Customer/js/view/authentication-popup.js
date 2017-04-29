@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-customer/view/frontend/web/js/view/authentication-popup.js

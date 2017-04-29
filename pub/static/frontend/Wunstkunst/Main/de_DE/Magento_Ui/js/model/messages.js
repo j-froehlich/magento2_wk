@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-ui/view/frontend/web/js/model/messages.js

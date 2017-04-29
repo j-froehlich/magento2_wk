@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/lib/web/knockoutjs/knockout-es5.js

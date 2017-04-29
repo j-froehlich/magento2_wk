@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-page-cache/view/frontend/web/js/page-cache.js

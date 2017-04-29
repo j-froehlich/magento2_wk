@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-search/view/frontend/web/form-mini.js
