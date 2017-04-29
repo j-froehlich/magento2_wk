@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ */
+
+/**
+ * @category   Magenerds
+ * @package    Magenerds_GermanLaw
+ * @subpackage etc
+ * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
+ * @link       http://www.techdivision.com/
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <germanlaw>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <price>
+                <tax_text>Inkl. %s MwSt., zzgl. [Versand]</tax_text>
+            </price>
+        </germanlaw>
+    </default>
+</config>
