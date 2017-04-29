@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/wunstkunst_magento2/var/view_preprocessed/frontools/frontend/Snowdog/all-possible-options/de_DE/web/js/navigation-menu.js
