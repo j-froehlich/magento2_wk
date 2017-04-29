@@ -1,1 +1,0 @@
-/Users/johannesfrohlich/work/htdocs/magento2_wk/lib/web/es6-collections.js

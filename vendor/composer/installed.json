@@ -7975,42 +7975,6 @@
         "homepage": "https://symfony.com"
     },
     {
-        "name": "magenerds/dashboard",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Magenerds/Dashboard.git",
-            "reference": "fd85850d04d53e72f851e0af8f01678d1aadc84e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Magenerds/Dashboard/zipball/fd85850d04d53e72f851e0af8f01678d1aadc84e",
-            "reference": "fd85850d04d53e72f851e0af8f01678d1aadc84e",
-            "shasum": ""
-        },
-        "require": {
-            "magento/framework": "100.0.*|100.1.*",
-            "php": "~5.5.0|~5.6.0|~7.0.0"
-        },
-        "time": "2017-03-16 09:13:28",
-        "type": "magento2-module",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "registration.php"
-            ],
-            "psr-4": {
-                "Magenerds\\Dashboard\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "OSL-3.0"
-        ],
-        "description": "The Magenerds dashboard provides useful information about Magenerds"
-    },
-    {
         "name": "composer/spdx-licenses",
         "version": "1.1.6",
         "version_normalized": "1.1.6.0",
@@ -10045,5 +10009,41 @@
             "AFL-3.0"
         ],
         "description": "N/A"
+    },
+    {
+        "name": "magenerds/dashboard",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Magenerds/Dashboard.git",
+            "reference": "fd85850d04d53e72f851e0af8f01678d1aadc84e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Magenerds/Dashboard/zipball/fd85850d04d53e72f851e0af8f01678d1aadc84e",
+            "reference": "fd85850d04d53e72f851e0af8f01678d1aadc84e",
+            "shasum": ""
+        },
+        "require": {
+            "magento/framework": "100.0.*|100.1.*",
+            "php": "~5.5.0|~5.6.0|~7.0.0"
+        },
+        "time": "2017-03-16 09:13:28",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Magenerds\\Dashboard\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0"
+        ],
+        "description": "The Magenerds dashboard provides useful information about Magenerds"
     }
 ]
