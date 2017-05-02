@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/lib/web/tiny_mce/plugins/pagebreak/editor_plugin_src.js

@@ -1,0 +1,1 @@
+/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-backend/view/adminhtml/web/js/bootstrap/editor.js
