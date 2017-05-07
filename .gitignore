@@ -1,6 +1,6 @@
 # files
-.htaccess
-.htaccess.sample
+/.htaccess
+#.htaccess.sample
 /.user.ini
 /composer.json
 /composer.lock
@@ -11,7 +11,8 @@ php.ini.sample
 /app/etc/env.php
 
 # folder
+cache/
 node_modules/
-media/
+#media/
 tools/
 var/
