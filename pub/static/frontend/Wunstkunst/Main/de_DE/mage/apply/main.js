@@ -1,1 +1,1 @@
-/var/www/clients/client1/web3/web/magento2_wk/lib/web/mage/apply/main.js
+/Users/johannesfrohlich/work/htdocs/magento2_wk/lib/web/mage/apply/main.js

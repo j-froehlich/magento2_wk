@@ -1,1 +1,0 @@
-/var/www/clients/client1/web3/web/magento2_wk/vendor/magento/theme-adminhtml-backend/web/js/theme.js

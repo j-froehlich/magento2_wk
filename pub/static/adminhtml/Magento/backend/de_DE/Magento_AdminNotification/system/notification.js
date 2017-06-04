@@ -1,1 +1,0 @@
-/var/www/clients/client1/web3/web/magento2_wk/vendor/magento/module-admin-notification/view/adminhtml/web/system/notification.js
