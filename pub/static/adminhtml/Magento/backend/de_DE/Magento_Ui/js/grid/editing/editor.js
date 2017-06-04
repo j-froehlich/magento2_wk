@@ -1,1 +1,1 @@
-/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-ui/view/base/web/js/grid/editing/editor.js
+/var/www/clients/client1/web3/web/magento2_wk/vendor/magento/module-ui/view/base/web/js/grid/editing/editor.js

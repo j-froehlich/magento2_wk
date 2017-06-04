@@ -1,1 +1,0 @@
-/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-catalog/view/adminhtml/web/catalog/category/assign-products.js

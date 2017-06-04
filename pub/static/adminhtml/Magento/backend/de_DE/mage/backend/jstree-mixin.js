@@ -1,1 +1,1 @@
-/Users/johannesfrohlich/work/htdocs/magento2_wk/lib/web/mage/backend/jstree-mixin.js
+/var/www/clients/client1/web3/web/magento2_wk/lib/web/mage/backend/jstree-mixin.js

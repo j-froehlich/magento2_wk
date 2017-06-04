@@ -1,1 +1,1 @@
-/Users/johannesfrohlich/work/htdocs/magento2_wk/vendor/magento/module-ui/view/base/web/js/lib/knockout/bindings/datepicker.js
+/var/www/clients/client1/web3/web/magento2_wk/vendor/magento/module-ui/view/base/web/js/lib/knockout/bindings/datepicker.js

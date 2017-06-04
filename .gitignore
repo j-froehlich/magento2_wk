@@ -5,9 +5,8 @@
 /composer.json
 /composer.lock
 /php.ini
-php.ini.sample
 /shell-commands.txt
-
+pub/static/**/*.gif
 /app/etc/env.php
 
 # folder

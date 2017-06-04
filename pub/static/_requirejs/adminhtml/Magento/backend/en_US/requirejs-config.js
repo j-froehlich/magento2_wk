@@ -4,61 +4,12 @@
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-
+/*eslint no-unused-vars: 0*/
 var config = {
-    "shim": {
-        "extjs/ext-tree": [
-            "prototype"
-        ],
-        "extjs/ext-tree-checkbox": [
-            "extjs/ext-tree",
-            "extjs/defaults"
-        ],
-        "jquery/editableMultiselect/js/jquery.editable": [
-            "jquery"
-        ]
-    },
-    "bundles": {
-        "js/theme": [
-            "globalNavigation",
-            "globalSearch",
-            "modalPopup",
-            "useDefault",
-            "loadingPopup",
-            "collapsable"
-        ]
-    },
-    "map": {
-        "*": {
-            "translateInline":      "mage/translate-inline",
-            "form":                 "mage/backend/form",
-            "button":               "mage/backend/button",
-            "accordion":            "mage/accordion",
-            "actionLink":           "mage/backend/action-link",
-            "validation":           "mage/backend/validation",
-            "notification":         "mage/backend/notification",
-            "loader":               "mage/loader_old",
-            "loaderAjax":           "mage/loader_old",
-            "floatingHeader":       "mage/backend/floating-header",
-            "suggest":              "mage/backend/suggest",
-            "mediabrowser":         "jquery/jstree/jquery.jstree",
-            "tabs":                 "mage/backend/tabs",
-            "treeSuggest":          "mage/backend/tree-suggest",
-            "calendar":             "mage/calendar",
-            "dropdown":             "mage/dropdown_old",
-            "collapsible":          "mage/collapsible",
-            "menu":                 "mage/backend/menu",
-            "jstree":               "jquery/jstree/jquery.jstree",
-            "details":              "jquery/jquery.details"
+    map: {
+        '*': {
+            'mediaUploader':  'Magento_Backend/js/media-uploader'
         }
-    },
-    "deps": [
-        "js/theme",
-        "mage/backend/bootstrap",
-        "mage/adminhtml/globals"
-    ],
-    "paths": {
-        "jquery/ui": "jquery/jquery-ui-1.9.2"
     }
 };
 
@@ -139,28 +90,61 @@ require.config(config);
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-/*eslint no-unused-vars: 0*/
-var config = {
-    map: {
-        '*': {
-            'mediaUploader':  'Magento_Backend/js/media-uploader'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 var config = {
-    map: {
-        '*': {
-            folderTree: 'Magento_Cms/js/folder-tree'
+    "shim": {
+        "extjs/ext-tree": [
+            "prototype"
+        ],
+        "extjs/ext-tree-checkbox": [
+            "extjs/ext-tree",
+            "extjs/defaults"
+        ],
+        "jquery/editableMultiselect/js/jquery.editable": [
+            "jquery"
+        ]
+    },
+    "bundles": {
+        "js/theme": [
+            "globalNavigation",
+            "globalSearch",
+            "modalPopup",
+            "useDefault",
+            "loadingPopup",
+            "collapsable"
+        ]
+    },
+    "map": {
+        "*": {
+            "translateInline":      "mage/translate-inline",
+            "form":                 "mage/backend/form",
+            "button":               "mage/backend/button",
+            "accordion":            "mage/accordion",
+            "actionLink":           "mage/backend/action-link",
+            "validation":           "mage/backend/validation",
+            "notification":         "mage/backend/notification",
+            "loader":               "mage/loader_old",
+            "loaderAjax":           "mage/loader_old",
+            "floatingHeader":       "mage/backend/floating-header",
+            "suggest":              "mage/backend/suggest",
+            "mediabrowser":         "jquery/jstree/jquery.jstree",
+            "tabs":                 "mage/backend/tabs",
+            "treeSuggest":          "mage/backend/tree-suggest",
+            "calendar":             "mage/calendar",
+            "dropdown":             "mage/dropdown_old",
+            "collapsible":          "mage/collapsible",
+            "menu":                 "mage/backend/menu",
+            "jstree":               "jquery/jstree/jquery.jstree",
+            "details":              "jquery/jquery.details"
         }
+    },
+    "deps": [
+        "js/theme",
+        "mage/backend/bootstrap",
+        "mage/adminhtml/globals"
+    ],
+    "paths": {
+        "jquery/ui": "jquery/jquery-ui-1.9.2"
     }
 };
 
@@ -213,6 +197,22 @@ require.config(config);
 var config = {
     map: {
         '*': {
+            folderTree: 'Magento_Cms/js/folder-tree'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
             categoryForm:       'Magento_Catalog/catalog/category/form',
             newCategoryDialog:  'Magento_Catalog/js/new-category-dialog',
             categoryTree:       'Magento_Catalog/js/category-tree',
@@ -237,9 +237,9 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            orderEditDialog: 'Magento_Sales/order/edit/message'
+            requireCookie: 'Magento_Cookie/js/require-cookie'
         }
-    }
+    } 
 };
 
 require.config(config);
@@ -253,9 +253,9 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            requireCookie: 'Magento_Cookie/js/require-cookie'
+            orderEditDialog: 'Magento_Sales/order/edit/message'
         }
-    } 
+    }
 };
 
 require.config(config);
@@ -419,27 +419,21 @@ require.config(config);
 })();
 (function() {
 /**
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
  */
 
-/**
- * RequireJS Config
- *
- * @copyright   Copyright (c) 2017 TechDivision GmbH (http://www.techdivision.com)
- * @site        https://www.techdivision.com/
- * @author      Simon Sippert <s.sippert@techdivision.com>
- * @type        {object}
- */
 var config = {
-    "map": {
-        "*": {
-            "sortableJs": "Magenerds_PageDesigner/js/vendor/sortableJs",
-            "PageDesigner": "Magenerds_PageDesigner/js/pdClass",
-            "page_designer": "Magenerds_PageDesigner/js/ui/page_designer"
+    map: {
+        '*': {
+            snowMenuAutoCompleteField: "Snowdog_Menu/js/auto_complete_field",
+            snowMenuEditorAdd: "Snowdog_Menu/js/add",
+            snowMenuEditorInit: "Snowdog_Menu/js/init",
+            snowMenuEditorRename: "Snowdog_Menu/js/rename",
+            snowMenuEditorSerialize: "Snowdog_Menu/js/serialize",
+            snowMenuSimpleField: "Snowdog_Menu/js/simple_field",
+            snowMenuTree: "Snowdog_Menu/js/jstree",
+            snowWysiwygSetup: "Snowdog_Menu/js/wysiwyg/setup"
         }
     }
 };
