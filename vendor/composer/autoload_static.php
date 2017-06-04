@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit97a9493f44d91e302078b219fbf6b5db
+class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
 {
     public static $files = array (
         '07ec02c7e667fdcb3e30c02cc772b743' => __DIR__ . '/..' . '/magento/framework/registration.php',
@@ -132,11 +132,11 @@ class ComposerStaticInit97a9493f44d91e302078b219fbf6b5db
         '3a6406c9f8cde9b1c369707a7310f354' => __DIR__ . '/..' . '/magenerds/module-germanlaw/registration.php',
         '6a6826c6b55c47100170d364dd03e1a9' => __DIR__ . '/..' . '/snowdog/theme-blank-sass/registration.php',
         '85093a1e3d1b54d52d7be34ce9bccf02' => __DIR__ . '/..' . '/timneutkens/magento2-module-twitterbootstrap-js/registration.php',
+        'ba3299f5a4063284699f3cee5dd4ca1b' => __DIR__ . '/..' . '/snowdog/module-menu/registration.php',
         '583682c13632dbb2680535a04562c4c2' => __DIR__ . '/..' . '/magento/module-cms-sample-data/registration.php',
         '62b69762ba9db62415318928f0532d51' => __DIR__ . '/..' . '/magento/module-sales-sample-data/registration.php',
         '2d86001ecd97c7011a4ada6539535841' => __DIR__ . '/..' . '/magenerds/language-de_de/registration.php',
         '29aa843258aff4b56babab963977eda8' => __DIR__ . '/..' . '/magenerds/module-baseprice/registration.php',
-        'ba3299f5a4063284699f3cee5dd4ca1b' => __DIR__ . '/..' . '/snowdog/module-menu/registration.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
     );
 
@@ -1837,11 +1837,11 @@ class ComposerStaticInit97a9493f44d91e302078b219fbf6b5db
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit97a9493f44d91e302078b219fbf6b5db::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit97a9493f44d91e302078b219fbf6b5db::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit97a9493f44d91e302078b219fbf6b5db::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit97a9493f44d91e302078b219fbf6b5db::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit97a9493f44d91e302078b219fbf6b5db::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,17 +1,17 @@
 # files
 /.htaccess
-#.htaccess.sample
 /.user.ini
 /composer.json
 /composer.lock
 /php.ini
 /shell-commands.txt
-pub/static/**/*.gif
 /app/etc/env.php
+
 
 # folder
 cache/
-node_modules/
-#media/
-tools/
-var/
+node_modules/*
+/pub/static/*
+tools/*
+var/*
+#media/*

@@ -131,10 +131,10 @@ return array(
     '3a6406c9f8cde9b1c369707a7310f354' => $vendorDir . '/magenerds/module-germanlaw/registration.php',
     '6a6826c6b55c47100170d364dd03e1a9' => $vendorDir . '/snowdog/theme-blank-sass/registration.php',
     '85093a1e3d1b54d52d7be34ce9bccf02' => $vendorDir . '/timneutkens/magento2-module-twitterbootstrap-js/registration.php',
+    'ba3299f5a4063284699f3cee5dd4ca1b' => $vendorDir . '/snowdog/module-menu/registration.php',
     '583682c13632dbb2680535a04562c4c2' => $vendorDir . '/magento/module-cms-sample-data/registration.php',
     '62b69762ba9db62415318928f0532d51' => $vendorDir . '/magento/module-sales-sample-data/registration.php',
     '2d86001ecd97c7011a4ada6539535841' => $vendorDir . '/magenerds/language-de_de/registration.php',
     '29aa843258aff4b56babab963977eda8' => $vendorDir . '/magenerds/module-baseprice/registration.php',
-    'ba3299f5a4063284699f3cee5dd4ca1b' => $vendorDir . '/snowdog/module-menu/registration.php',
     'b4cf39431a4b949eea8aa69ebb3d39da' => $baseDir . '/app/etc/NonComposerComponentRegistration.php',
 );
