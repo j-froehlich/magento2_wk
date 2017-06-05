@@ -6,6 +6,7 @@
 /php.ini
 /shell-commands.txt
 /app/etc/env.php
+/pub/static/deployed_version.txt
 
 
 # folder
