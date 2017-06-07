@@ -43,6 +43,8 @@ return array(
     'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
     'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'Symfony\\CS\\' => array($vendorDir . '/fabpot/php-cs-fixer/Symfony/CS'),
+    'StudioEmma\\Optimus\\' => array($vendorDir . '/studioemma/magento2-module-optimus'),
+    'StudioEmma\\Core\\' => array($vendorDir . '/studioemma/magento2-module-core'),
     'StaticReview\\' => array($vendorDir . '/sjparkinson/static-review/src'),
     'Snowdog\\Menu\\' => array($vendorDir . '/snowdog/module-menu'),
     'Seld\\PharUtils\\' => array($vendorDir . '/seld/phar-utils/src'),

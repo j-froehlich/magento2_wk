@@ -10052,5 +10052,116 @@
         ],
         "description": "Symfony Stopwatch Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "studioemma/magento2-module-optimus",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/studioemma/magento2-module-optimus.git",
+            "reference": "a8dbfde6886ac9fdd66f11acf8aae8810f2fe02a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/studioemma/magento2-module-optimus/zipball/a8dbfde6886ac9fdd66f11acf8aae8810f2fe02a",
+            "reference": "a8dbfde6886ac9fdd66f11acf8aae8810f2fe02a",
+            "shasum": ""
+        },
+        "require": {
+            "magento/framework": ">=100.0.0",
+            "magento/module-catalog": ">=100.0.0",
+            "php": "~5.6.0|~7.0.0"
+        },
+        "time": "2017-01-11 09:34:32",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "StudioEmma\\Optimus\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "description": "Optimus module with enhancements to blank Magento theme"
+    },
+    {
+        "name": "studioemma/magento2-module-core",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/studioemma/magento2-module-core.git",
+            "reference": "dc80fbd7fd692ba6e15b8b0bbecddab82a25cfb6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/studioemma/magento2-module-core/zipball/dc80fbd7fd692ba6e15b8b0bbecddab82a25cfb6",
+            "reference": "dc80fbd7fd692ba6e15b8b0bbecddab82a25cfb6",
+            "shasum": ""
+        },
+        "require": {
+            "magento/framework": ">=100.0.0",
+            "magento/module-catalog": ">=100.0.0",
+            "php": "~5.6.0|~7.0.0"
+        },
+        "time": "2017-01-11 09:16:36",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "StudioEmma\\Core\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "description": "Studio Emma Core module, with general functionality used in Magento 2 project"
+    },
+    {
+        "name": "studioemma/magento2-theme-optimus",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/studioemma/magento2-theme-optimus.git",
+            "reference": "c7b7677b532b4d63ef759f5100ee57fc0ec6700b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/studioemma/magento2-theme-optimus/zipball/c7b7677b532b4d63ef759f5100ee57fc0ec6700b",
+            "reference": "c7b7677b532b4d63ef759f5100ee57fc0ec6700b",
+            "shasum": ""
+        },
+        "require": {
+            "magento/theme-frontend-blank": ">=100.0.0",
+            "php": "~5.6.0|~7.0.0",
+            "studioemma/magento2-module-core": ">=2.0",
+            "studioemma/magento2-module-optimus": ">=1.0"
+        },
+        "time": "2017-04-18 11:57:06",
+        "type": "magento2-theme",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0"
+        ],
+        "description": "Base theme used by Studio Emma"
     }
 ]

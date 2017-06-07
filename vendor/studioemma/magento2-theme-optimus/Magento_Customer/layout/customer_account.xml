@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="wishlist_sidebar" remove="true"/>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+
+        <referenceBlock name="customer_account_navigation_block">
+            <arguments>
+                <argument name="block_title" translate="true" xsi:type="string">Account menu</argument>
+            </arguments>
+        </referenceBlock>
+
+        <!-- Adds a link to log out in the side menu on account pages -->
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-logout-link">
+                <arguments>
+                    <argument name="path" xsi:type="string">customer/account/logout</argument>
+                    <argument name="label" xsi:type="string" translate="true">Sign Out</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

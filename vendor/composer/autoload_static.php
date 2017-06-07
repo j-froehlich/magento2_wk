@@ -60,8 +60,8 @@ class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
         '488f7c33a6ecd00a43d62e548d61b8d3' => __DIR__ . '/..' . '/magento/module-newsletter/registration.php',
         '4a78493fd48e24e9ec5cd7b77605aa2f' => __DIR__ . '/..' . '/magento/module-developer/registration.php',
         'b2a251005c112dee4a8e7f7580a475f5' => __DIR__ . '/..' . '/magento/module-cookie/registration.php',
-        '157e241791c95df2d41c00e4314f115e' => __DIR__ . '/..' . '/magento/module-search/registration.php',
         '056cd8d2398ceabe9e3cff88f4cf877b' => __DIR__ . '/..' . '/magento/theme-frontend-blank/registration.php',
+        '157e241791c95df2d41c00e4314f115e' => __DIR__ . '/..' . '/magento/module-search/registration.php',
         'cbc7f0674bf1ae1a1c481a581c6ca4fd' => __DIR__ . '/..' . '/magento/module-review/registration.php',
         '73a8e4290482dda77755fd5545cb64f4' => __DIR__ . '/..' . '/magento/module-webapi/registration.php',
         '069005ffe7b4e7c23b0b9b5c1807ec74' => __DIR__ . '/..' . '/magento/module-paypal/registration.php',
@@ -129,6 +129,8 @@ class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
         'ecb8e9b41f51c277a87468608b694cd4' => __DIR__ . '/..' . '/magento/module-marketplace/registration.php',
         '2c2cf29a6a1026ad991c189a4c4ab958' => __DIR__ . '/..' . '/magento/module-theme-sample-data/registration.php',
         'dca3c9561684e2df7aa04142a7c0cfd7' => __DIR__ . '/..' . '/magento/module-configurable-sample-data/registration.php',
+        'fe0c02d96670a96d766b7eb25d7a7a13' => __DIR__ . '/..' . '/studioemma/magento2-module-optimus/registration.php',
+        '44b3365788ae123a98756fef7a7fc776' => __DIR__ . '/..' . '/studioemma/magento2-module-core/registration.php',
         '3a6406c9f8cde9b1c369707a7310f354' => __DIR__ . '/..' . '/magenerds/module-germanlaw/registration.php',
         '6a6826c6b55c47100170d364dd03e1a9' => __DIR__ . '/..' . '/snowdog/theme-blank-sass/registration.php',
         '85093a1e3d1b54d52d7be34ce9bccf02' => __DIR__ . '/..' . '/timneutkens/magento2-module-twitterbootstrap-js/registration.php',
@@ -137,6 +139,7 @@ class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
         '62b69762ba9db62415318928f0532d51' => __DIR__ . '/..' . '/magento/module-sales-sample-data/registration.php',
         '2d86001ecd97c7011a4ada6539535841' => __DIR__ . '/..' . '/magenerds/language-de_de/registration.php',
         '29aa843258aff4b56babab963977eda8' => __DIR__ . '/..' . '/magenerds/module-baseprice/registration.php',
+        '78fa410088e7dfc9a878cdb41b51764f' => __DIR__ . '/..' . '/studioemma/magento2-theme-optimus/registration.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
     );
 
@@ -186,6 +189,8 @@ class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\CS\\' => 11,
+            'StudioEmma\\Optimus\\' => 19,
+            'StudioEmma\\Core\\' => 16,
             'StaticReview\\' => 13,
             'Snowdog\\Menu\\' => 13,
             'Seld\\PharUtils\\' => 15,
@@ -494,6 +499,14 @@ class ComposerStaticInitb7d5d894605c5e3d6fc2aa4e4645e76a
         'Symfony\\CS\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/php-cs-fixer/Symfony/CS',
+        ),
+        'StudioEmma\\Optimus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/studioemma/magento2-module-optimus',
+        ),
+        'StudioEmma\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/studioemma/magento2-module-core',
         ),
         'StaticReview\\' => 
         array (

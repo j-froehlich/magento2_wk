@@ -1,0 +1,34 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<p class="supporting"><a href="/content"><?php echo __('Back to overview') ?></a></p>
+<section class="content-row">
+<h1 class="supporting">Basic layout</h1>
+<p class="supporting intro">This document shows how basic layout will look like. Titles, quotes, numeric lists, regular lists, dividers to to divide sections, ... With the exception of dividers &amp; status messages, you can use this formatting through the Word-a-like interface. Dividers &amp; status messages can be used by copy-pasting the htmlcode into your own CMS page or static block.</p>
+</section>
+
+<script type="text/javascript">
+require(["jquery"], function($){
+    $(document).ready(function ($) {
+        // ==============================================
+        // Toggle html example codes
+        // ==============================================
+
+        $(".showHtml").click(function() {
+            $(this).parent().next('.htmlCode').addClass('toggled');
+            $(this).parent().next('.htmlCode').find('textarea').select();
+            $(this).hide();
+            return false;
+        });
+
+        $(".hideHtml").click(function() {
+            $(this).parent().parent().removeClass('toggled');
+            $(this).parent().parent().prev().find('.showHtml').show();
+            return false;
+        });
+    });
+});
+</script>

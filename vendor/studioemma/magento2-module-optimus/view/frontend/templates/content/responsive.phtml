@@ -1,0 +1,30 @@
+<?php
+//
+//  Resposive show hide examples
+//  ____________________________
+?>
+<p class="supporting"><a href="/content"><?php echo __('Back to overview') ?></a></p>
+<h4 class="supporting">This document shows specific classes you can use to show or hide certain elements on certain screensizes.</h4>
+
+<script type="text/javascript">
+require(["jquery"], function($){
+    $(document).ready(function ($) {
+        // ==============================================
+        // Toggle html example codes
+        // ==============================================
+
+        $(".showHtml").click(function() {
+            $(this).parent().next('.htmlCode').addClass('toggled');
+            $(this).parent().next('.htmlCode').find('textarea').select();
+            $(this).hide();
+            return false;
+        });
+
+        $(".hideHtml").click(function() {
+            $(this).parent().parent().removeClass('toggled');
+            $(this).parent().parent().prev().find('.showHtml').show();
+            return false;
+        });
+    });
+});
+</script>

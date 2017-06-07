@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>
+            Images and video within content
+        </title>
+    </head>
+    <body>
+        <!-- NORMAL HEAD TITLE IS NOT TRANSLATED -->
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Images and video within content</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images.phtml" name="optimus-content-images" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/inline-wrap.phtml" name="optimus-content-images-inline-wrap" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/pagewide.phtml" name="optimus-content-images-pagewide" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/50.phtml" name="optimus-content-images-50" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/33.phtml" name="optimus-content-images-33" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/50-nospace.phtml" name="optimus-content-images-50-nospace" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/video.phtml" name="optimus-content-images-video" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/video-lightbox.phtml" name="optimus-content-images-video-lightbox" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/slideshow.phtml" name="optimus-content-images-slideshow" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/slideshow-pager.phtml" name="optimus-content-images-slideshow-pager" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/gallery-lightbox.phtml" name="optimus-content-images-gallery-lightbox" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/gallery-lightbox-alt.phtml" name="optimus-content-images-gallery-lightbox-alt" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/images/flexslider.phtml" name="optimus-content-images-flexslider" />
+        </referenceContainer>
+    </body>
+</page>

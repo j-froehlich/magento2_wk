@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>
+            Interaction examples
+        </title>
+        <!--<link src="SE_ContentLayout::js/content.js" />-->
+    </head>
+    <body>
+        <!-- NORMAL HEAD TITLE IS NOT TRANSLATED -->
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" name="title" xsi:type="string">Interaction examples</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/interaction.phtml" name="optimus-content-interaction" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/interaction/accordeon.phtml" name="optimus-content-interaction-accordeon" />
+            <block class="Magento\Framework\View\Element\Template" template="StudioEmma_Optimus::content/interaction/toggle.phtml" name="optimus-content-interaction-toggle" />
+        </referenceContainer>
+    </body>
+</page>

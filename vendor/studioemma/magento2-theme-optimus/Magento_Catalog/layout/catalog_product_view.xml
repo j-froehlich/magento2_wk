@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.social">
+            <block class="Magento\Catalog\Block\Product\View" name="product.info.socialsharing" template="product/view/social-sharing.phtml" after="product.info.mailto" />
+        </referenceContainer>
+
+        <referenceContainer name="columns.top">
+            <block class="Magento\Framework\View\Element\Template" name="catalog.compare.sidebar"
+                   template="Magento_Catalog::product/compare/sidebar.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="compareProducts" xsi:type="array">
+                                <item name="component" xsi:type="string">Magento_Catalog/js/view/compare-products</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="top.links">
+            <block class="Magento\Framework\View\Element\Template" name="catalog.compare.link" before="-"
+                   template="Magento_Catalog::product/compare/link.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="compareProducts" xsi:type="array">
+                                <item name="component" xsi:type="string">Magento_Catalog/js/view/compare-products</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceContainer name="product.info.price">
+            <!-- Uncomment below to show custom attributes on PDP 
+            <block class="Magento\Catalog\Block\Product\View" name="product.info.additional.attributes" template="product/view/additional-attributes.phtml" after="product.info.review">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getBrand</argument>
+                    <argument name="at_code" xsi:type="string">brand</argument>
+                    <argument name="css_class" xsi:type="string">brand</argument>
+                    <argument name="at_label" xsi:type="string">default</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="brand"</argument>
+                </arguments>
+            </block> -->
+        </referenceContainer> 
+
+        <referenceContainer name="product.info.form.content">
+            <!-- Uncomment below to show stock information and stock USP information on PDP -->
+            <block class="Magento\Catalog\Block\Product\View" name="product.info.stock" template="product/view/stock.phtml" after="product.info.addtocart" />
+        </referenceContainer>
+
+        <referenceBlock name="catalog.product.related">
+            <arguments>
+                <!-- Activate below for visual buttons on related products -->
+                <argument name="css_class" xsi:type="string">visual-buttons</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

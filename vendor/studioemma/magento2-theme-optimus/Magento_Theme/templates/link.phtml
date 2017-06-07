@@ -1,0 +1,19 @@
+<?php
+/**
+ *  template of simple li element with a class and a link inside
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var $block \Magento\Framework\View\Element\Html\Link
+ */
+?>
+<?php if (!$block->getIsDisabled()): ?>
+<li<?php if ($class = $block->getCssClass()):?> class="<?php echo $block->escapeHtml(__($class))?>"<?php endif;?>>
+    <a href="<?php echo $block->escapeHtml($block->getHref())?>"
+        <?php if ($title = $block->getTitle()):?> title="<?php echo $block->escapeHtml(__($title))?>"<?php endif;?>>
+        <?php echo $block->escapeHtml(__($block->getLabel()))?>
+    </a>
+</li>
+<?php endif; ?>

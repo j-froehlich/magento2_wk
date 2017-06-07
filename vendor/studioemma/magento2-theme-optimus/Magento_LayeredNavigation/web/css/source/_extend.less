@@ -1,0 +1,256 @@
+// /**
+//  * Copyright © 2015 Studioemma. All rights reserved.
+//  * See ... for license details.
+//  */
+
+& when (@media-common = true) {
+    /* Mobile layered nav */
+    .toolbar.toolbar-products {
+
+        .block.filter {
+            clear: left;
+            float: left;
+            text-align: left;
+            margin-top: 4px;
+            position: relative;
+            margin-bottom: 0;
+
+            .block-content.filter-content {
+                display: none;
+            }
+
+            .block-title {
+                cursor: pointer;
+                margin-bottom: 0;
+
+               .lib-icon-font(
+                    @icon-next,
+                    @_icon-font-position: after,
+                    @_icon-font-color: @primary__color,
+                    @_icon-font-size: 34px,
+                    @_icon-font-text-hide: true
+                );
+
+                &:after {
+                    line-height: 34px;
+                }
+            }
+
+            &.opened {
+                .block-title {
+                    .lib-icon-font(
+                        @icon-down,
+                        @_icon-font-position: after,
+                        @_icon-font-color: @primary__color,
+                        @_icon-font-size: 34px,
+                        @_icon-font-text-hide: true
+                    );
+
+                    &:after {
+                        line-height: 34px;
+                    }
+                }
+
+                .block-content.filter-content {
+                    display: block;
+                    position: absolute;
+                    top: 42px;
+                    left: 0;
+                    z-index: 99;
+                    width: calc(~"100vw - 25px");
+                    background-color: #fff;
+                    border: 1px solid #d1d1d1;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .sorter {
+            float: right;
+        }
+
+        .modes {
+            margin-bottom: 12px;
+        }
+    }
+
+    .block.filter {
+        dt {
+            cursor: pointer;
+
+            &:after {
+                content: "\f107";
+                font-family: "FontAwesome";
+                padding-left: 8px;
+            }
+
+            &.toggle-active {
+                &:after {
+                    content: "\f106";
+                }
+            }
+        }
+
+        dd {
+            .more {
+                display: none;
+
+                a{
+                    margin: 5px 15px;
+                    display: inline-block;
+                    font-style: italic;
+                    color: gray;
+                    border-bottom: 1px solid gray;
+                    font-size: .85em;
+                    padding-bottom: 1px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: gray;
+                        border-bottom-color: gray;
+                    }
+                }
+            }
+
+            &.collapse {
+                .more {
+                    display: block;
+
+                    &.hidden {
+                        display: none;
+                    }
+
+                    span.less {
+                        display: none;
+                    }
+                }
+
+                li {
+                    &.visible {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .filter-options {
+            li.item {
+                &.hidden {
+                    display: none;
+                }
+
+                &.visible {
+                    display: block;
+                }
+            }
+
+            .items {
+                &.open {
+                    .more {
+                        span.less {
+                            display: inline;
+                        }
+
+                        span.more {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*
+
+    Checkboxes addon
+    Controlled through 'filter-with-checkbox' class in /app/design/frontend/Studioemma/optimus/Magento_layeredNavigation/layout/catalog_category_view_type_layered.xml
+
+    */
+    body.filter-with-checkbox {
+        .block.filter {
+            .filter-options {
+                li.item {
+                    a {
+                        &:before {
+                            content: "\f096";
+                            font-family: "FontAwesome";
+                            font-size: 13px;
+                            padding-right: 6px;
+                            position: relative;
+                            top: 1px;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            &:before {
+                                content: "\f046";
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-current-subtitle {
+        font-weight:  normal;
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 2rem;
+        color: @primary__color;
+    }
+
+    .filter-current {
+
+        .block-actions {
+            font-size: 0.935em;
+        }
+
+        .items {
+            margin-bottom: 8px;
+
+            .item {
+                display: inline-block;
+                margin: 0 4px 4px 0;
+                border: 1px @border-color__base solid;
+                font-size: 0.935em;
+                padding: .15em .2em;
+
+                .action.remove {
+                    color: @primary__color;
+                    margin-left: 3px;
+                    font-size: 1.2rem;
+                    &:before {
+                        content: "\f00d";
+                        font-family: "FontAwesome";
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                .filter-label {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .block.filter {
+
+        .filter-title {
+            display: none;
+        }
+
+        .filter-subtitle {
+            display: none;
+        }
+    }
+}
