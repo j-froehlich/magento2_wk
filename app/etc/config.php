@@ -115,6 +115,8 @@ return array (
     'Magento_CatalogWidget' => 1,
     'Magento_Wishlist' => 1,
     'Snowdog_Menu' => 1,
+    'StudioEmma_Core' => 1,
+    'StudioEmma_Optimus' => 1,
     'TimNeutkens_TwitterBootstrapJs' => 1,
     'Wunstkunst_Utilities' => 1,
   ),
